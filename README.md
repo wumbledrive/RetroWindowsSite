@@ -30,12 +30,15 @@ ___
 # WIP Updates
 
 ##### Functionality
-
-2/6/19: Window knows when it is in active or inactive state.
+[2/6/19] 
+Window can be "maximized" to full screen. 
+Both Small and Big windows have an active and inactive state.
 ![Active/Innactive Windows](https://github.com/wumbledrive/RetroWindowsSite/blob/master/Images/Active:Inactive%20Window.gif?raw=true)
 
-2/6/19
+[2/6/19]
+Window closes.
 ![Closing Windows](https://github.com/wumbledrive/RetroWindowsSite/blob/master/Images/Window%20Maximize%20&%20Close.gif?raw=true)
 
-2/7/19 Window has a working "tab." It maintains window size when minimized, and also follows active/inactive state.
+[2/7/19]
+Window has a working "tab." It maintains window size when minimized, and also follows active/inactive state.
 ![Working Tab](https://github.com/wumbledrive/RetroWindowsSite/blob/master/Images/WorkingTab.gif?raw=true)
