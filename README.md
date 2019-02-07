@@ -27,25 +27,15 @@ ___
 
 ---
 
-#### Technologies:
-
-| Name        | Purpose     |
-| ----------- | ----------- |
-| Sketch      | Prototyping & Animation       |
-| Google Domains   | Domain Name|
-| Amazon AWS LightSail   | Server Hosting |
-| NodeJS   | Back End|
-| Bootstrap (JS Framework)   | Front End|
-
-
----
-
 # WIP Updates
 
-##### Added some window functionality
-* Menu bar active/inactive states
-* Minimizing, Maximizing, and Closing button functionality. 
+##### Functionality
 
+2/6/19: Window knows when it is in active or inactive state.
 ![Active/Innactive Windows](https://github.com/wumbledrive/RetroWindowsSite/blob/master/Images/Active:Inactive%20Window.gif?raw=true)
 
+2/6/19
 ![Closing Windows](https://github.com/wumbledrive/RetroWindowsSite/blob/master/Images/Window%20Maximize%20&%20Close.gif?raw=true)
+
+2/7/19 Window has a working "tab." It maintains window size when minimized, and also follows active/inactive state.
+![Working Tab](https://github.com/wumbledrive/RetroWindowsSite/blob/master/Images/WorkingTab.gif?raw=true)
