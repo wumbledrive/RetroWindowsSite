@@ -38,3 +38,14 @@ ___
 | Bootstrap (JS Framework)   | Front End|
 
 
+---
+
+# WIP Updates
+
+##### Added some window functionality
+* Menu bar active/inactive states
+* Minimizing, Maximizing, and Closing button functionality. 
+
+![Active/Innactive Windows](https://github.com/wumbledrive/RetroWindowsSite/blob/master/Images/Active:Inactive%20Window.gif?raw=true)
+
+![Closing Windows](https://github.com/wumbledrive/RetroWindowsSite/blob/master/Images/Window%20Maximize%20&%20Close.gif?raw=true)
