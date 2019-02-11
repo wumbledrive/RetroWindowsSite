@@ -1,0 +1,1156 @@
+
+@font-face {
+                          font-family: "MSReferenceSansSerif";
+                          src: url('../fonts/MS Reference Sans Serif.ttf') format("truetype");
+                        }
+                        
+.desktop {
+  width               : 100%;
+  min-width           : 1000px;
+  height              : 100vh;
+  min-height          : 1000px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color    : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.desktop .dockbar {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 950px;
+  height              : 50px;
+  width               : 1000px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .dockbar .menubar {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .dockbar .clocktray {
+  background-color    : rgba(255,255,255,0.0);
+  right               : 0.60%;
+  bottom              : 2.00%;
+  height              : 88.00%;
+  width               : 10.40%;
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .dockbar .clock {
+  background-color    : rgba(255,255,255,0.0);
+  right               : 1.40%;
+  bottom              : 22.00%;
+  height              : 46.00%;
+  width               : 9.50%;
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "Arial", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(61, 55, 55, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.desktop .dockbar .startbutton {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 2.00%;
+  height              : 88.00%;
+  width               : 10.40%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0.70%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .dockbar .clock1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 22.00%;
+  height              : 46.00%;
+  width               : 5.20%;
+  position            : absolute;
+  margin              : 0;
+  left                : 4.90%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "Arial", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 18.0px;
+  color               : rgba(61, 55, 55, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.desktop .dockbar .starticon {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 18.00%;
+  height              : 64.00%;
+  width               : 3.20%;
+  position            : absolute;
+  margin              : 0;
+  left                : 1.70%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .background {
+  background-color    : rgba(2, 117, 117, 1.0);
+  top                 : 0px;
+  height              : 950px;
+  width               : 1000px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .apptab {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 955px;
+  height              : 44px;
+  width               : 229px;
+  position            : absolute;
+  margin              : 0;
+  left                : 120px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.0;
+}
+.desktop .apptab .inactive {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1.14%;
+  height              : 97.73%;
+  width               : 99.56%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0.22%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.0;
+}
+.desktop .apptab .active {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .apptab .titleinactive {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : calc(50.00% - 14px);
+  height              : calc(0.00% + 28px);
+  width               : 55.90%;
+  position            : absolute;
+  margin              : 0;
+  left                : 17.90%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.0;
+  font-family         : "Arial", Helvetica, Arial, serif;
+  font-weight         : 400;
+  font-style          : normal;
+  font-size           : 25.0px;
+  color               : rgba(61, 55, 55, 1.0);
+  text-align          : left;
+  line-height         : 29.0px;
+}
+.desktop .apptab .titleactive {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : calc(50.00% - 14px);
+  height              : calc(0.00% + 28px);
+  width               : 58.95%;
+  position            : absolute;
+  margin              : 0;
+  left                : 17.90%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "Arial", Helvetica, Arial, serif;
+  font-weight         : 600;
+  font-style          : normal;
+  font-size           : 25.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : left;
+  line-height         : 29.0px;
+}
+.desktop .apptab .iconsmall {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 4px;
+  height              : 32px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 950px;
+  width               : 1000px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.0;
+}
+.desktop .appwindowlarge .windowbackground {
+  background-color    : rgba(215, 215, 215, 1.0);
+  top                 : 0%;
+  height              : 100%;
+  box-sizing          : border-box;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  border-style        : solid;
+  border-width        : 1px;
+  border-color        : rgba(150, 150, 150, 1.0);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : calc(0.00% + 6px);
+  height              : calc(100.00% - 930px);
+  width               : calc(100.00% - 13px);
+  position            : absolute;
+  margin              : 0;
+  left                : calc(0.00% + 8px);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .menubarinnactive {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : calc(0.00% + 20px);
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.0;
+}
+.desktop .appwindowlarge .menubar1 .menubaractive {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : calc(0.00% + 20px);
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons {
+  background-color    : rgba(255,255,255,0.0);
+  right               : calc(0.00% + 1px);
+  top                 : calc(0.00% + 2px);
+  height              : calc(0.00% + 18px);
+  width               : calc(0.00% + 62px);
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button3 {
+  background-color    : rgba(255,255,255,0.0);
+  right               : 0%;
+  top                 : 0%;
+  height              : 100%;
+  width               : 32.26%;
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button3 .menubarbutton3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button3 .exitbutton {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 5.56%;
+  height              : 77.78%;
+  width               : 65.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 17.50%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button3 .exitbutton .line {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button3 .exitbutton .line1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 32.26%;
+  position            : absolute;
+  margin              : 0;
+  left                : 33.87%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button2 .menubarbutton2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button2 .maximizeicon {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 16.67%;
+  height              : 55.56%;
+  width               : 50.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 20.00%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button2 .maximizeicon .frame {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : 80.00%;
+  box-sizing          : border-box;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  border-style        : solid;
+  border-width        : 1px;
+  border-color        : rgba(2, 2, 7, 1.0);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button2 .maximizeicon .top {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 40.00%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 32.26%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button1 .menubarbutton1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .menubar1 .buttons .button1 .minimizeicon {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 27.78%;
+  height              : 22.22%;
+  width               : 50.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 20.00%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .whitetextbox {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : calc(0.00% + 31px);
+  height              : 94.63%;
+  width               : 97.90%;
+  position            : absolute;
+  margin              : 0;
+  left                : calc(0.00% + 8px);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .scrollbars {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 2.11%;
+  height              : 94.74%;
+  width               : 97.90%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0.80%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .scrollbars .hscrollbar {
+  background-color    : rgba(215, 215, 215, 1.0);
+  bottom              : 0%;
+  height              : calc(0.00% + 16px);
+  width               : calc(100.00% - 16px);
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .scrollbars .vscrollbar {
+  background-color    : rgba(215, 215, 215, 1.0);
+  right               : calc(0.00% - 434px);
+  top                 : calc(0.00% + 434px);
+  height              : calc(100.00% - 884px);
+  width               : calc(0.00% + 884px);
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(-270deg); /* IE 9 */
+  -webkit-transform   : rotate(-270deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-270deg);
+}
+.desktop .appwindowlarge .scrollbars .scrollbarsquare {
+  background-color    : rgba(215, 215, 215, 1.0);
+  right               : 0%;
+  bottom              : 0%;
+  height              : calc(0.00% + 16px);
+  box-sizing          : border-box;
+  width               : calc(0.00% + 16px);
+  position            : absolute;
+  margin              : 0;
+  border-style        : solid;
+  border-width        : 1px;
+  border-color        : rgba(150, 150, 150, 1.0);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindowlarge .textboxshadows {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : calc(0.00% + 29px);
+  height              : 95.47%;
+  width               : 98.70%;
+  position            : absolute;
+  margin              : 0;
+  left                : calc(0.00% + 5px);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 94px;
+  height              : 355px;
+  width               : 604px;
+  position            : absolute;
+  margin              : 0;
+  left                : 322px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.0;
+}
+.desktop .appwindow .windowbackground1 {
+  background-color    : rgba(215, 215, 215, 1.0);
+  top                 : 0%;
+  height              : 100%;
+  box-sizing          : border-box;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  border-style        : solid;
+  border-width        : 1px;
+  border-color        : rgba(150, 150, 150, 1.0);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : calc(0.00% + 6px);
+  height              : calc(100.00% - 335px);
+  width               : calc(100.00% - 13px);
+  position            : absolute;
+  margin              : 0;
+  left                : calc(0.00% + 8px);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .menubarinnactive1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : calc(0.00% + 20px);
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.0;
+}
+.desktop .appwindow .menubar2 .menubaractive1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : calc(0.00% + 20px);
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 {
+  background-color    : rgba(255,255,255,0.0);
+  right               : calc(0.00% + 1px);
+  top                 : calc(0.00% + 2px);
+  height              : calc(0.00% + 18px);
+  width               : calc(0.00% + 62px);
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button31 {
+  background-color    : rgba(255,255,255,0.0);
+  right               : 0%;
+  top                 : 0%;
+  height              : 100%;
+  width               : 32.26%;
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button31 .menubarbutton31 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button31 .exitbutton1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 5.56%;
+  height              : 77.78%;
+  width               : 65.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 17.50%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button31 .exitbutton1 .line2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button31 .exitbutton1 .line3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button21 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 32.26%;
+  position            : absolute;
+  margin              : 0;
+  left                : 33.87%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button21 .menubarbutton21 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button21 .maximizeicon1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 16.67%;
+  height              : 55.56%;
+  width               : 50.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 20.00%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button21 .maximizeicon1 .frame1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : 80.00%;
+  box-sizing          : border-box;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  border-style        : solid;
+  border-width        : 1px;
+  border-color        : rgba(2, 2, 7, 1.0);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button21 .maximizeicon1 .top1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 40.00%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button11 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 32.26%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button11 .menubarbutton11 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .menubar2 .buttons1 .button11 .minimizeicon1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 27.78%;
+  height              : 22.22%;
+  width               : 50.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 20.00%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .whitetextbox1 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : calc(0.00% + 31px);
+  height              : 89.30%;
+  width               : 97.35%;
+  position            : absolute;
+  margin              : 0;
+  left                : calc(0.00% + 8px);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .scrollbars1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 1.69%;
+  height              : 89.58%;
+  width               : 97.35%;
+  position            : absolute;
+  margin              : 0;
+  left                : 1.32%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .scrollbars1 .hscrollbar1 {
+  background-color    : rgba(215, 215, 215, 1.0);
+  bottom              : calc(0.00% + 1px);
+  height              : calc(0.00% + 16px);
+  width               : calc(100.00% - 16px);
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .scrollbars1 .vscrollbar1 {
+  background-color    : rgba(215, 215, 215, 1.0);
+  right               : calc(0.00% - 143px);
+  top                 : calc(0.00% + 143px);
+  height              : calc(100.00% - 302px);
+  width               : calc(0.00% + 301px);
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(-270deg); /* IE 9 */
+  -webkit-transform   : rotate(-270deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-270deg);
+}
+.desktop .appwindow .scrollbars1 .scrollbarsquare1 {
+  background-color    : rgba(215, 215, 215, 1.0);
+  right               : 0%;
+  bottom              : calc(0.00% + 1px);
+  height              : calc(0.00% + 16px);
+  box-sizing          : border-box;
+  width               : calc(0.00% + 16px);
+  position            : absolute;
+  margin              : 0;
+  border-style        : solid;
+  border-width        : 1px;
+  border-color        : rgba(150, 150, 150, 1.0);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .appwindow .textboxshadows1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : calc(0.00% + 29px);
+  height              : 91.55%;
+  width               : 98.68%;
+  position            : absolute;
+  margin              : 0;
+  left                : calc(0.00% + 5px);
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 19px;
+  height              : 615px;
+  width               : 113px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .readmetxt {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : 14.80%;
+  width               : 88.50%;
+  position            : absolute;
+  margin              : 0;
+  left                : 5.75%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .readmetxt .readmetxt1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : 23.08%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+  font-size           : 17.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.desktop .desktopicons .readmetxt .readmeicon {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 65.93%;
+  width               : 60.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 20.00%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .resume {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 21.30%;
+  height              : 14.80%;
+  width               : 88.50%;
+  position            : absolute;
+  margin              : 0;
+  left                : 5.75%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .resume .resume1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : 23.08%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+  font-size           : 17.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.desktop .desktopicons .resume .resumeicon {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 65.93%;
+  width               : 60.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 20.00%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .otherlinks {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 42.68%;
+  height              : 14.63%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .otherlinks .otherlinks1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : 23.33%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+  font-size           : 17.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.desktop .desktopicons .otherlinks .other {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 66.67%;
+  width               : 53.10%;
+  position            : absolute;
+  margin              : 0;
+  left                : 23.45%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .apps {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 21.30%;
+  height              : 14.80%;
+  width               : 53.10%;
+  position            : absolute;
+  margin              : 0;
+  left                : 23.45%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .apps .apps1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : 23.08%;
+  width               : 93.33%;
+  position            : absolute;
+  margin              : 0;
+  left                : 3.33%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+  font-size           : 17.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.desktop .desktopicons .apps .apps2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 65.93%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .repository {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 14.80%;
+  width               : 88.50%;
+  position            : absolute;
+  margin              : 0;
+  left                : 5.75%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.desktop .desktopicons .repository .repository1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : 23.08%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+  font-size           : 17.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 21.0px;
+}
+.desktop .desktopicons .repository .repository2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 65.93%;
+  width               : 60.00%;
+  position            : absolute;
+  margin              : 0;
+  left                : 20.00%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}

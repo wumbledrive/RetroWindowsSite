@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./img/favicon.png" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport"/>
+        <link href="./css/desktop.css" rel="stylesheet" type="text/css"/>
+        <meta content="Launchpad by Anima" name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+ background: rgba(255, 255, 255, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="desktop"/>
+        <style>
+            .desktop-bbF1 * {
+                box-sizing          : border-box;
+            }
+            .desktop-bbF1 {
+                pointer-events      : none;
+                overflow            : hidden;
+                width               : 100%;
+                min-width           : 1000px;
+                height              : 100vh;
+                min-height          : 1000px;
+                position            : relative;
+                overflow            : hidden;
+                margin              : 0px;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                background-color    : rgba(255, 255, 255, 1.0);
+            }
+            .desktop-bbF1 .dockbar {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 950px;
+                height              : 50px;
+                width               : 1000px;
+                position            : absolute;
+                margin              : 0;
+                left                : 0px;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .dockbar .menubar {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .dockbar .clocktray {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                right               : 0.60%;
+                bottom              : 2.00%;
+                height              : 88.00%;
+                width               : 10.40%;
+                position            : absolute;
+                margin              : 0;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .dockbar .clock {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                right               : 1.40%;
+                bottom              : 22.00%;
+                height              : 46.00%;
+                width               : 9.50%;
+                position            : absolute;
+                margin              : 0;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                font-family         : "Arial", Helvetica, Arial, serif;
+                font-weight         : 400;
+                font-style          : normal;
+                font-size           : 18.0px;
+                color               : rgba(61, 55, 55, 1.0);
+                text-align          : center;
+                line-height         : 21.0px;
+            }
+            .desktop-bbF1 .dockbar .startbutton {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 2.00%;
+                height              : 88.00%;
+                width               : 10.40%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0.70%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .dockbar .clock1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 22.00%;
+                height              : 46.00%;
+                width               : 5.20%;
+                position            : absolute;
+                margin              : 0;
+                left                : 4.90%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                font-family         : "Arial", Helvetica, Arial, serif;
+                font-weight         : 400;
+                font-style          : normal;
+                font-size           : 18.0px;
+                color               : rgba(61, 55, 55, 1.0);
+                text-align          : center;
+                line-height         : 21.0px;
+            }
+            .desktop-bbF1 .dockbar .starticon {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 18.00%;
+                height              : 64.00%;
+                width               : 3.20%;
+                position            : absolute;
+                margin              : 0;
+                left                : 1.70%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .background {
+                pointer-events      : none;
+                background-color    : rgba(2, 117, 117, 1.0);
+                top                 : 0px;
+                height              : 950px;
+                width               : 1000px;
+                position            : absolute;
+                margin              : 0;
+                left                : 0px;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .apptab {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 955px;
+                height              : 44px;
+                width               : 229px;
+                position            : absolute;
+                margin              : 0;
+                left                : 120px;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                opacity             : 0.0095;
+            }
+            .desktop-bbF1 .apptab .inactive {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 1.14%;
+                height              : 97.73%;
+                width               : 99.56%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0.22%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                opacity             : 0.007;
+            }
+            .desktop-bbF1 .apptab .active {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .apptab .titleinactive {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : calc(50.00% - 14px);
+                height              : calc(0.00% + 28px);
+                width               : 55.90%;
+                position            : absolute;
+                margin              : 0;
+                left                : 17.90%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                opacity             : 0.0040;
+                font-family         : "Arial", Helvetica, Arial, serif;
+                font-weight         : 400;
+                font-style          : normal;
+                font-size           : 25.0px;
+                color               : rgba(61, 55, 55, 1.0);
+                text-align          : left;
+                line-height         : 29.0px;
+            }
+            .desktop-bbF1 .apptab .titleactive {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : calc(50.00% - 14px);
+                height              : calc(0.00% + 28px);
+                width               : 58.95%;
+                position            : absolute;
+                margin              : 0;
+                left                : 17.90%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                font-family         : "Arial", Helvetica, Arial, serif;
+                font-weight         : 600;
+                font-style          : normal;
+                font-size           : 25.0px;
+                color               : rgba(0, 0, 0, 1.0);
+                text-align          : left;
+                line-height         : 29.0px;
+            }
+            .desktop-bbF1 .apptab .iconsmall {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 4px;
+                height              : 32px;
+                width               : 32px;
+                position            : absolute;
+                margin              : 0;
+                left                : 6px;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0px;
+                height              : 950px;
+                width               : 1000px;
+                position            : absolute;
+                margin              : 0;
+                left                : 0px;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                opacity             : 0.0065;
+            }
+            .desktop-bbF1 .appwindowlarge .windowbackground {
+                pointer-events      : none;
+                background-color    : rgba(215, 215, 215, 1.0);
+                top                 : 0%;
+                height              : 100%;
+                box-sizing          : border-box;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                border-style        : solid;
+                border-width        : 1px;
+                border-color        : rgba(150, 150, 150, 1.0);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : calc(0.00% + 6px);
+                height              : calc(100.00% - 930px);
+                width               : calc(100.00% - 13px);
+                position            : absolute;
+                margin              : 0;
+                left                : calc(0.00% + 8px);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .menubarinnactive {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : calc(0.00% + 20px);
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                opacity             : 0.0052;
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .menubaractive {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : calc(0.00% + 20px);
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                right               : calc(0.00% + 1px);
+                top                 : calc(0.00% + 2px);
+                height              : calc(0.00% + 18px);
+                width               : calc(0.00% + 62px);
+                position            : absolute;
+                margin              : 0;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button3 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                right               : 0%;
+                top                 : 0%;
+                height              : 100%;
+                width               : 32.26%;
+                position            : absolute;
+                margin              : 0;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button3 .menubarbutton3 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button3 .exitbutton {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 5.56%;
+                height              : 77.78%;
+                width               : 65.00%;
+                position            : absolute;
+                margin              : 0;
+                left                : 17.50%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button3 .exitbutton .line {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button3 .exitbutton .line1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button2 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 32.26%;
+                position            : absolute;
+                margin              : 0;
+                left                : 33.87%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button2 .menubarbutton2 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button2 .maximizeicon {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 16.67%;
+                height              : 55.56%;
+                width               : 50.00%;
+                position            : absolute;
+                margin              : 0;
+                left                : 20.00%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button2 .maximizeicon .frame {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 0%;
+                height              : 80.00%;
+                box-sizing          : border-box;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                border-style        : solid;
+                border-width        : 1px;
+                border-color        : rgba(2, 2, 7, 1.0);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button2 .maximizeicon .top {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 40.00%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 32.26%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button1 .menubarbutton1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button1 .minimizeicon {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 27.78%;
+                height              : 22.22%;
+                width               : 50.00%;
+                position            : absolute;
+                margin              : 0;
+                left                : 20.00%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .whitetextbox {
+                pointer-events      : none;
+                background-color    : rgba(255, 255, 255, 1.0);
+                top                 : calc(0.00% + 31px);
+                height              : 94.63%;
+                width               : 97.90%;
+                position            : absolute;
+                margin              : 0;
+                left                : calc(0.00% + 8px);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .scrollbars {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 2.11%;
+                height              : 94.74%;
+                width               : 97.90%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0.80%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .scrollbars .hscrollbar {
+                pointer-events      : none;
+                background-color    : rgba(215, 215, 215, 1.0);
+                bottom              : 0%;
+                height              : calc(0.00% + 16px);
+                width               : calc(100.00% - 16px);
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .scrollbars .vscrollbar {
+                pointer-events      : none;
+                background-color    : rgba(215, 215, 215, 1.0);
+                right               : calc(0.00% - 434px);
+                top                 : calc(0.00% + 434px);
+                height              : calc(100.00% - 884px);
+                width               : calc(0.00% + 884px);
+                position            : absolute;
+                margin              : 0;
+                -ms-transform       : rotate(-270deg); /* IE 9 */
+                -webkit-transform   : rotate(-270deg); /* Chrome, Safari, Opera */
+                transform           : rotate(-270deg);
+            }
+            .desktop-bbF1 .appwindowlarge .scrollbars .scrollbarsquare {
+                pointer-events      : none;
+                background-color    : rgba(215, 215, 215, 1.0);
+                right               : 0%;
+                bottom              : 0%;
+                height              : calc(0.00% + 16px);
+                box-sizing          : border-box;
+                width               : calc(0.00% + 16px);
+                position            : absolute;
+                margin              : 0;
+                border-style        : solid;
+                border-width        : 1px;
+                border-color        : rgba(150, 150, 150, 1.0);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindowlarge .textboxshadows {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : calc(0.00% + 29px);
+                height              : 95.47%;
+                width               : 98.70%;
+                position            : absolute;
+                margin              : 0;
+                left                : calc(0.00% + 5px);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 94px;
+                height              : 355px;
+                width               : 604px;
+                position            : absolute;
+                margin              : 0;
+                left                : 322px;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                opacity             : 0.0039;
+            }
+            .desktop-bbF1 .appwindow .windowbackground1 {
+                pointer-events      : none;
+                background-color    : rgba(215, 215, 215, 1.0);
+                top                 : 0%;
+                height              : 100%;
+                box-sizing          : border-box;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                border-style        : solid;
+                border-width        : 1px;
+                border-color        : rgba(150, 150, 150, 1.0);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : calc(0.00% + 6px);
+                height              : calc(100.00% - 335px);
+                width               : calc(100.00% - 13px);
+                position            : absolute;
+                margin              : 0;
+                left                : calc(0.00% + 8px);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .menubarinnactive1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : calc(0.00% + 20px);
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                opacity             : 0.0048;
+            }
+            .desktop-bbF1 .appwindow .menubar2 .menubaractive1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : calc(0.00% + 20px);
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                right               : calc(0.00% + 1px);
+                top                 : calc(0.00% + 2px);
+                height              : calc(0.00% + 18px);
+                width               : calc(0.00% + 62px);
+                position            : absolute;
+                margin              : 0;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button31 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                right               : 0%;
+                top                 : 0%;
+                height              : 100%;
+                width               : 32.26%;
+                position            : absolute;
+                margin              : 0;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button31 .menubarbutton31 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button31 .exitbutton1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 5.56%;
+                height              : 77.78%;
+                width               : 65.00%;
+                position            : absolute;
+                margin              : 0;
+                left                : 17.50%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button31 .exitbutton1 .line2 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button31 .exitbutton1 .line3 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button21 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 32.26%;
+                position            : absolute;
+                margin              : 0;
+                left                : 33.87%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button21 .menubarbutton21 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button21 .maximizeicon1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 16.67%;
+                height              : 55.56%;
+                width               : 50.00%;
+                position            : absolute;
+                margin              : 0;
+                left                : 20.00%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button21 .maximizeicon1 .frame1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 0%;
+                height              : 80.00%;
+                box-sizing          : border-box;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                border-style        : solid;
+                border-width        : 1px;
+                border-color        : rgba(2, 2, 7, 1.0);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button21 .maximizeicon1 .top1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 40.00%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button11 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 32.26%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button11 .menubarbutton11 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 100%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .menubar2 .buttons1 .button11 .minimizeicon1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 27.78%;
+                height              : 22.22%;
+                width               : 50.00%;
+                position            : absolute;
+                margin              : 0;
+                left                : 20.00%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .whitetextbox1 {
+                pointer-events      : none;
+                background-color    : rgba(255, 255, 255, 1.0);
+                top                 : calc(0.00% + 31px);
+                height              : 89.30%;
+                width               : 97.35%;
+                position            : absolute;
+                margin              : 0;
+                left                : calc(0.00% + 8px);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .scrollbars1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 1.69%;
+                height              : 89.58%;
+                width               : 97.35%;
+                position            : absolute;
+                margin              : 0;
+                left                : 1.32%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .scrollbars1 .hscrollbar1 {
+                pointer-events      : none;
+                background-color    : rgba(215, 215, 215, 1.0);
+                bottom              : calc(0.00% + 1px);
+                height              : calc(0.00% + 16px);
+                width               : calc(100.00% - 16px);
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .scrollbars1 .vscrollbar1 {
+                pointer-events      : none;
+                background-color    : rgba(215, 215, 215, 1.0);
+                right               : calc(0.00% - 143px);
+                top                 : calc(0.00% + 143px);
+                height              : calc(100.00% - 302px);
+                width               : calc(0.00% + 301px);
+                position            : absolute;
+                margin              : 0;
+                -ms-transform       : rotate(-270deg); /* IE 9 */
+                -webkit-transform   : rotate(-270deg); /* Chrome, Safari, Opera */
+                transform           : rotate(-270deg);
+            }
+            .desktop-bbF1 .appwindow .scrollbars1 .scrollbarsquare1 {
+                pointer-events      : none;
+                background-color    : rgba(215, 215, 215, 1.0);
+                right               : 0%;
+                bottom              : calc(0.00% + 1px);
+                height              : calc(0.00% + 16px);
+                box-sizing          : border-box;
+                width               : calc(0.00% + 16px);
+                position            : absolute;
+                margin              : 0;
+                border-style        : solid;
+                border-width        : 1px;
+                border-color        : rgba(150, 150, 150, 1.0);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .appwindow .textboxshadows1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : calc(0.00% + 29px);
+                height              : 91.55%;
+                width               : 98.68%;
+                position            : absolute;
+                margin              : 0;
+                left                : calc(0.00% + 5px);
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 19px;
+                height              : 615px;
+                width               : 113px;
+                position            : absolute;
+                margin              : 0;
+                left                : 6px;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .readmetxt {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 0%;
+                height              : 14.80%;
+                width               : 88.50%;
+                position            : absolute;
+                margin              : 0;
+                left                : 5.75%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .readmetxt .readmetxt1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 0%;
+                height              : 23.08%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+                font-size           : 17.0px;
+                color               : rgba(255, 255, 255, 1.0);
+                text-align          : center;
+                line-height         : 21.0px;
+            }
+            .desktop-bbF1 .desktopicons .readmetxt .readmeicon {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 65.93%;
+                width               : 60.00%;
+                position            : absolute;
+                margin              : 0;
+                left                : 20.00%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .resume {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 21.30%;
+                height              : 14.80%;
+                width               : 88.50%;
+                position            : absolute;
+                margin              : 0;
+                left                : 5.75%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .resume .resume1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 0%;
+                height              : 23.08%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+                font-size           : 17.0px;
+                color               : rgba(255, 255, 255, 1.0);
+                text-align          : center;
+                line-height         : 21.0px;
+            }
+            .desktop-bbF1 .desktopicons .resume .resumeicon {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 65.93%;
+                width               : 60.00%;
+                position            : absolute;
+                margin              : 0;
+                left                : 20.00%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .otherlinks {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 42.68%;
+                height              : 14.63%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .otherlinks .otherlinks1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 0%;
+                height              : 23.33%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+                font-size           : 17.0px;
+                color               : rgba(255, 255, 255, 1.0);
+                text-align          : center;
+                line-height         : 21.0px;
+            }
+            .desktop-bbF1 .desktopicons .otherlinks .other {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 66.67%;
+                width               : 53.10%;
+                position            : absolute;
+                margin              : 0;
+                left                : 23.45%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .apps {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 21.30%;
+                height              : 14.80%;
+                width               : 53.10%;
+                position            : absolute;
+                margin              : 0;
+                left                : 23.45%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .apps .apps1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 0%;
+                height              : 23.08%;
+                width               : 93.33%;
+                position            : absolute;
+                margin              : 0;
+                left                : 3.33%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+                font-size           : 17.0px;
+                color               : rgba(255, 255, 255, 1.0);
+                text-align          : center;
+                line-height         : 21.0px;
+            }
+            .desktop-bbF1 .desktopicons .apps .apps2 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 65.93%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .repository {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 14.80%;
+                width               : 88.50%;
+                position            : absolute;
+                margin              : 0;
+                left                : 5.75%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1 .desktopicons .repository .repository1 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                bottom              : 0%;
+                height              : 23.08%;
+                width               : 100%;
+                position            : absolute;
+                margin              : 0;
+                left                : 0%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+                font-family         : "MSReferenceSansSerif", Helvetica, Arial, serif;
+                font-size           : 17.0px;
+                color               : rgba(255, 255, 255, 1.0);
+                text-align          : center;
+                line-height         : 21.0px;
+            }
+            .desktop-bbF1 .desktopicons .repository .repository2 {
+                pointer-events      : none;
+                background-color    : rgba(255,255,255,0.0);
+                top                 : 0%;
+                height              : 65.93%;
+                width               : 60.00%;
+                position            : absolute;
+                margin              : 0;
+                left                : 20.00%;
+                -ms-transform       : rotate(0deg); /* IE 9 */
+                -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+                transform           : rotate(0deg);
+            }
+            .desktop-bbF1.state0-to-state1 .appwindowlarge {
+                transition          : all 0.001s ease-in-out 0.0s;
+                opacity             : opacity: 0.008;
+            }
+            .desktop-bbF1.state0-to-state1 .apptab {
+                transition          : all 0.001s ease-in-out 0.0s;
+                opacity             : opacity: 0.004;
+            }
+            .desktop-bbF1.state1-to-state2 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state1-to-state2 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.004;
+            }
+            .desktop-bbF1.state1-to-state2 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state2 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state3-to-state2 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.007;
+            }
+            .desktop-bbF1.state3-to-state2 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state2 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state2 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state2 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state2 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state2 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state2 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state2-to-state3 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.007;
+            }
+            .desktop-bbF1.state2-to-state3 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state2-to-state3 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state3 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state2-to-state3 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state2-to-state3 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state3 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state2-to-state3 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state3 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state2-to-state6 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state2-to-state6 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state6 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state6 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state6 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state2-to-state6 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state2-to-state6 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state6 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.006;
+            }
+            .desktop-bbF1.state2-to-state6 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state2-to-state6 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state6 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state2-to-state4 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state2-to-state4 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state4 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state4 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state2-to-state4 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state2-to-state4 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state7 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state7 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state7 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state7 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state7 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state7 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state4-to-state7 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.007;
+            }
+            .desktop-bbF1.state4-to-state7 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state7 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state7 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state4-to-state7 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state7-to-state4 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state7-to-state4 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.005;
+            }
+            .desktop-bbF1.state7-to-state4 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state7-to-state4 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state7-to-state4 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state7-to-state4 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state7-to-state4 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state7-to-state4 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state7-to-state4 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state7-to-state4 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state7-to-state4 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state6-to-state2 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state6-to-state2 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.008;
+            }
+            .desktop-bbF1.state6-to-state2 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state6-to-state2 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state6-to-state2 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state6-to-state2 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state6-to-state2 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state6-to-state2 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state6-to-state2 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state6-to-state2 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state6-to-state2 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state4-to-state5 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state5 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state5 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state5 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state5 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state5 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state4-to-state5 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.002;
+            }
+            .desktop-bbF1.state4-to-state5 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state5 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state5 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state4-to-state5 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.002;
+            }
+            .desktop-bbF1.state5-to-state4 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state5-to-state4 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.006;
+            }
+            .desktop-bbF1.state5-to-state4 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state4 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state4 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state4 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state4 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state4 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state4 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state4 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state5-to-state4 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.004;
+            }
+            .desktop-bbF1.state2-to-state1 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state2-to-state1 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.002;
+            }
+            .desktop-bbF1.state2-to-state1 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state1 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state1 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state1 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state1 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state1 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state2 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state2 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state2 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state4-to-state2 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state4-to-state2 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state4-to-state2 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state6 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state6 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.002;
+            }
+            .desktop-bbF1.state3-to-state6 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state6 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state3-to-state6 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.001;
+            }
+            .desktop-bbF1.state3-to-state6 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state3-to-state6 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.001;
+            }
+            .desktop-bbF1.state3-to-state6 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.003;
+            }
+            .desktop-bbF1.state3-to-state6 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state3-to-state6 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state6 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state3-to-state4 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state3-to-state4 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.004;
+            }
+            .desktop-bbF1.state3-to-state4 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state4 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state4 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state4 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state4 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state4 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state4 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state3-to-state4 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state1 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state1 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.004;
+            }
+            .desktop-bbF1.state3-to-state1 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state1 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state1 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state1 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state1 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state3-to-state1 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state3-to-state1 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state7 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state5-to-state7 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.003;
+            }
+            .desktop-bbF1.state5-to-state7 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.008;
+            }
+            .desktop-bbF1.state5-to-state7 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state5-to-state7 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.001;
+            }
+            .desktop-bbF1.state5-to-state7 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state5-to-state7 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.004;
+            }
+            .desktop-bbF1.state5-to-state7 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state7 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0.99;
+            }
+            .desktop-bbF1.state5-to-state7 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state7 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state2 .appwindow {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state2 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state2 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state2 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state2 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state2 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state2 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state2 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state2 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state2 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state2 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state2 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state1 .apptab {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : opacity: 0.001;
+            }
+            .desktop-bbF1.state5-to-state1 .appwindowlarge {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state1 .appwindowlarge .menubar1 .menubarinnactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state1 .apptab .titleactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state1 .apptab .active {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state1 .apptab .titleinactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state1 .appwindowlarge .menubar1 .menubaractive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state1 .appwindow .menubar2 .menubarinnactive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state1 .appwindow .menubar2 .menubaractive1 {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state5-to-state1 .apptab .inactive {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 0;
+            }
+            .desktop-bbF1.state5-to-state1 .desktopicons {
+                transition          : all 0.2s ease-in-out 0.0s;
+                opacity             : 1;
+            }
+            .desktop-bbF1.state0 {
+                
+            }
+            .desktop-bbF1.state1 .apptab {
+                opacity             : 0.006;
+            }
+            .desktop-bbF1.state1 .appwindowlarge {
+                opacity             : 0.0050;
+            }
+            .desktop-bbF1.state2 .appwindowlarge {
+                opacity             : 0.0079;
+            }
+            .desktop-bbF1.state3 .apptab .titleactive {
+                opacity             : 0.0042;
+            }
+            .desktop-bbF1.state3 .apptab .active {
+                opacity             : 0.0062;
+            }
+            .desktop-bbF1.state3 .appwindow .menubar2 .menubaractive1 {
+                opacity             : 0.0081;
+            }
+            .desktop-bbF1.state3 .appwindowlarge {
+                opacity             : 0.006;
+            }
+            .desktop-bbF1.state4 .desktopicons {
+                opacity             : 0.0046;
+            }
+            .desktop-bbF1.state4 .appwindow .menubar2 .menubaractive1 {
+                opacity             : 0.0059;
+            }
+            .desktop-bbF1.state5 .apptab .titleactive {
+                opacity             : 0.0080;
+            }
+            .desktop-bbF1.state5 .appwindowlarge .menubar1 .menubaractive {
+                opacity             : 0.0084;
+            }
+            .desktop-bbF1.state5 .apptab .active {
+                opacity             : 0.0013;
+            }
+            .desktop-bbF1.state5 .desktopicons {
+                opacity             : 0.0096;
+            }
+            .desktop-bbF1.state5 .appwindow .menubar2 .menubaractive1 {
+                opacity             : 0.0026;
+            }
+            .desktop-bbF1.state6 .apptab .titleactive {
+                opacity             : 0.003;
+            }
+            .desktop-bbF1.state6 .appwindowlarge .menubar1 .menubaractive {
+                opacity             : 0.0020;
+            }
+            .desktop-bbF1.state6 .apptab .active {
+                opacity             : 0.0064;
+            }
+            .desktop-bbF1.state6 .appwindow .menubar2 .menubaractive1 {
+                opacity             : 0.009;
+            }
+            .desktop-bbF1.state6 .appwindowlarge {
+                opacity             : 0.0095;
+            }
+            .desktop-bbF1.state7 .apptab .titleactive {
+                opacity             : 0.0097;
+            }
+            .desktop-bbF1.state7 .appwindowlarge .menubar1 .menubaractive {
+                opacity             : 0.0078;
+            }
+            .desktop-bbF1.state7 .apptab .active {
+                opacity             : 0.0048;
+            }
+            .desktop-bbF1.state7 .appwindow .menubar2 .menubaractive1 {
+                opacity             : 0.0066;
+            }
+            .desktop-bbF1.state7 .appwindowlarge {
+                opacity             : 0.0010;
+            }
+        </style>
+        <div id="UvdXZCd">
+            <div class="desktop desktop-bbF1 component state1" data-initial-state="state1">
+                <div style="width: 1000px; height: 100%; position:relative; margin:auto;">
+                    <div class="dockbar">
+                        <img class="menubar" src="./img/desktop-menubar.png">
+                            <img class="clocktray" src="./img/desktop-clocktray@2x.png">
+                                <div class="clock">
+                                    12:00 PM
+                                </div>
+                                <img class="startbutton" src="./img/desktop-startbutton@2x.png">
+                                    <div class="clock1">
+                                        Code
+                                    </div>
+                                    <img class="starticon" src="./img/desktop-starticon@2x.png"/>
+                                </img>
+                            </img>
+                        </img>
+                    </div>
+                    <div class="background">
+                    </div>
+                    <div class="apptab">
+                        <img class="inactive" src="./img/desktop-inactive@2x.png">
+                            <img class="active" src="./img/desktop-active@2x.png">
+                                <div class="titleinactive">
+                                    Readme.txt
+                                </div>
+                                <div class="titleactive">
+                                    Readme.txt
+                                </div>
+                                <img class="iconsmall" src="./img/desktop-iconsmall@2x.png"/>
+                            </img>
+                        </img>
+                    </div>
+                    <div class="appwindowlarge">
+                        <div class="windowbackground">
+                        </div>
+                        <div class="menubar1">
+                            <img class="menubarinnactive" src="./img/desktop-menubarinnactive.png">
+                                <img class="menubaractive" src="./img/desktop-menubaractive.png">
+                                    <div class="buttons">
+                                        <div class="button3">
+                                            <img class="menubarbutton3" src="./img/desktop-menubarbutton3@2x.png">
+                                                <div class="exitbutton">
+                                                    <img class="line" src="./img/desktop-line@2x.png">
+                                                        <img class="line1" src="./img/desktop-line-3@2x.png"/>
+                                                    </img>
+                                                </div>
+                                            </img>
+                                        </div>
+                                        <div class="button2">
+                                            <img class="menubarbutton2" src="./img/desktop-menubarbutton1-1@2x.png">
+                                                <div class="maximizeicon">
+                                                    <div class="frame">
+                                                    </div>
+                                                    <img class="top" src="./img/desktop-minimizeicon-1@2x.png"/>
+                                                </div>
+                                            </img>
+                                        </div>
+                                        <div class="button1">
+                                            <img class="menubarbutton1" src="./img/desktop-menubarbutton1-1@2x.png">
+                                                <img class="minimizeicon" src="./img/desktop-minimizeicon-1@2x.png"/>
+                                            </img>
+                                        </div>
+                                    </div>
+                                </img>
+                            </img>
+                        </div>
+                        <div class="whitetextbox">
+                        </div>
+                        <div class="scrollbars">
+                            <div class="hscrollbar">
+                            </div>
+                            <div class="vscrollbar">
+                            </div>
+                            <div class="scrollbarsquare">
+                            </div>
+                        </div>
+                        <img class="textboxshadows" src="./img/desktop-textboxshadows.png"/>
+                    </div>
+                    <div class="appwindow">
+                        <div class="windowbackground1">
+                        </div>
+                        <div class="menubar2">
+                            <img class="menubarinnactive1" src="./img/desktop-menubarinnactive-1.png">
+                                <img class="menubaractive1" src="./img/desktop-menubaractive-1.png">
+                                    <div class="buttons1">
+                                        <div class="button31">
+                                            <img class="menubarbutton31" src="./img/desktop-menubarbutton3@2x.png">
+                                                <div class="exitbutton1">
+                                                    <img class="line2" src="./img/desktop-line@2x.png">
+                                                        <img class="line3" src="./img/desktop-line-3@2x.png"/>
+                                                    </img>
+                                                </div>
+                                            </img>
+                                        </div>
+                                        <div class="button21">
+                                            <img class="menubarbutton21" src="./img/desktop-menubarbutton1-1@2x.png">
+                                                <div class="maximizeicon1">
+                                                    <div class="frame1">
+                                                    </div>
+                                                    <img class="top1" src="./img/desktop-minimizeicon-1@2x.png"/>
+                                                </div>
+                                            </img>
+                                        </div>
+                                        <div class="button11">
+                                            <img class="menubarbutton11" src="./img/desktop-menubarbutton1-1@2x.png">
+                                                <img class="minimizeicon1" src="./img/desktop-minimizeicon-1@2x.png"/>
+                                            </img>
+                                        </div>
+                                    </div>
+                                </img>
+                            </img>
+                        </div>
+                        <div class="whitetextbox1">
+                        </div>
+                        <div class="scrollbars1">
+                            <div class="hscrollbar1">
+                            </div>
+                            <div class="vscrollbar1">
+                            </div>
+                            <div class="scrollbarsquare1">
+                            </div>
+                        </div>
+                        <img class="textboxshadows1" src="./img/desktop-textboxshadows-1.png"/>
+                    </div>
+                    <div class="desktopicons">
+                        <div class="readmetxt">
+                            <div class="readmetxt1">
+                                Readme.txt
+                            </div>
+                            <img class="readmeicon" src="./img/desktop-readmeicon@2x.png"/>
+                        </div>
+                        <div class="resume">
+                            <div class="resume1">
+                                Resume
+                            </div>
+                            <img class="resumeicon" src="./img/desktop-resumeicon@2x.png"/>
+                        </div>
+                        <div class="otherlinks">
+                            <div class="otherlinks1">
+                                Other Links
+                            </div>
+                            <img class="other" src="./img/desktop-other@2x.png"/>
+                        </div>
+                        <div class="apps">
+                            <div class="apps1">
+                                Apps
+                            </div>
+                            <img class="apps2" src="./img/desktop-apps@2x.png"/>
+                        </div>
+                        <div class="repository">
+                            <div class="repository1">
+                                Repository
+                            </div>
+                            <img class="repository2" src="./img/desktop-repository@2x.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            if (typeof String.prototype.endsWith !== 'function') {
+                String.prototype.endsWith = function(suffix) {
+                    return this.indexOf(suffix, this.length - suffix.length) !== -1;
+                };
+            }
+            if (!String.prototype.startsWith) {
+                String.prototype.startsWith = function(searchString, position) {
+                    position = position || 0;
+                    return this.indexOf(searchString, position) === position;
+                };
+            }
+            if (!Array.prototype.forEach) {
+                Array.prototype.forEach = function(callback) {
+                    var T, k;
+                    if (this == null) {
+                        throw new TypeError('this is null or not defined');
+                    }
+                    var O = Object(this);
+                    var len = O.length >>> 0;
+                    if (typeof callback !== 'function') {
+                        throw new TypeError(callback + ' is not a function');
+                    }
+                    if (arguments.length > 1) {
+                        T = arguments[1];
+                    }
+                    k = 0;
+                    while (k < len) {
+                        var kValue;
+                        if (k in O) {
+                            kValue = O[k];
+                            callback.call(T, kValue, k, O);
+                        }
+                        k++;
+                    }
+                };
+            }
+            function toArray(obj) {
+                var array = [];
+                for (var i = obj.length >>> 0; i--; ) {
+                    array[i] = obj[i];
+                }
+                return array;
+            }
+            function addClass(object, className) {
+                object.classList ? object.classList.add(className) : object.className += ' ' + className;
+            }
+            function removeAllClassesButFirst(component, skipClass) {
+                var classList = component.classList;
+                var componentClass = classList.item(0);
+                var toRemove = [];
+                var beforeComponent = true;
+                toArray(classList).forEach(function(className) {
+                    beforeComponent = beforeComponent && className != 'component';
+                    if (className != skipClass && className != componentClass && className != 'component' && !beforeComponent) {
+                        toRemove.push(className);
+                    }
+                });
+                toRemove.forEach(function(className) {
+                    classList.remove(className);
+                });
+            }
+            function applyState(component, stateClass) {
+                var componentClass = component.classList.item(0);
+                component.className = componentClass;
+                component.classList.add(stateClass);
+            }
+            function isCurrentState(component, state) {
+                var classList = component.classList;
+                var rv = false;
+                toArray(classList).forEach(function(className) {
+                    if (className.endsWith(state)) {
+                        rv = true;
+                    }
+                });
+                return rv;
+            }
+            function whichTransitionEvent() {
+                var t, el = document.createElement("fakeelement");
+                var transitions = {
+                    "transition": "transitionend",
+                    "OTransition": "oTransitionEnd",
+                    "MozTransition": "transitionend",
+                    "WebkitTransition": "webkitTransitionEnd"
+                };
+                for (t in transitions) {
+                    if (el.style[t] !== undefined) {
+                        return transitions[t];
+                    }
+                }
+            }
+            var transitionEvent = whichTransitionEvent();
+            function clickdesktopbbF1UvdXZCd1Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state1')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate1tostate2EndedHandler);
+                            removeAllClassesButFirst(component, 'state1-to-state2');
+                            addClass(component, 'state2');
+                            addClass(component, 'state1-to-state2');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate1tostate2EndedHandler(event) {
+                if (event.target.className.trim() == 'appwindow' || event.target.className.startsWith('appwindow ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate1tostate2EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .desktopicons .readmetxt');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd1Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .desktopicons .readmetxt');
+            }
+            function resetdesktopbbF1UvdXZCd() {
+                var component = document.querySelector('.desktop-bbF1');
+                if (!component) {
+                    return;
+                }
+                component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate1tostate2EndedHandler);
+                removeAllClassesButFirst(component, 'state1-to-state2');
+                addClass(component, 'state2');
+                addClass(component, 'state1-to-state2');
+            }
+            function mouseenterdesktopbbF1UvdXZCd2Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state3')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate3tostate2EndedHandler);
+                            removeAllClassesButFirst(component, 'state3-to-state2');
+                            addClass(component, 'state2');
+                            addClass(component, 'state3-to-state2');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate3tostate2EndedHandler(event) {
+                if (event.target.className.trim() == 'apptab' || event.target.className.startsWith('apptab ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate3tostate2EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindow');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('mouseenter', mouseenterdesktopbbF1UvdXZCd2Handler);
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindow');
+            }
+            function mouseleavedesktopbbF1UvdXZCd3Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state2')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate2tostate3EndedHandler);
+                            removeAllClassesButFirst(component, 'state2-to-state3');
+                            addClass(component, 'state3');
+                            addClass(component, 'state2-to-state3');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate2tostate3EndedHandler(event) {
+                if (event.target.className.trim() == 'apptab' || event.target.className.startsWith('apptab ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate2tostate3EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindow');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('mouseleave', mouseleavedesktopbbF1UvdXZCd3Handler);
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindow');
+            }
+            function clickdesktopbbF1UvdXZCd4Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state2')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate2tostate6EndedHandler);
+                            removeAllClassesButFirst(component, 'state2-to-state6');
+                            addClass(component, 'state6');
+                            addClass(component, 'state2-to-state6');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate2tostate6EndedHandler(event) {
+                if (event.target.className.trim() == 'apptab' || event.target.className.startsWith('apptab ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate2tostate6EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindow .menubar2 .buttons1 .button11');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd4Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindow .menubar2 .buttons1 .button11');
+            }
+            function clickdesktopbbF1UvdXZCd5Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state2')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate2tostate4EndedHandler);
+                            removeAllClassesButFirst(component, 'state2-to-state4');
+                            addClass(component, 'state4');
+                            addClass(component, 'state2-to-state4');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate2tostate4EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate2tostate4EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindow .menubar2 .buttons1 .button21');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd5Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindow .menubar2 .buttons1 .button21');
+            }
+            function clickdesktopbbF1UvdXZCd6Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state4')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate4tostate7EndedHandler);
+                            removeAllClassesButFirst(component, 'state4-to-state7');
+                            addClass(component, 'state7');
+                            addClass(component, 'state4-to-state7');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate4tostate7EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate4tostate7EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindowlarge .menubar1 .buttons .button1');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd6Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button1');
+            }
+            function clickdesktopbbF1UvdXZCd7Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state7')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate7tostate4EndedHandler);
+                            removeAllClassesButFirst(component, 'state7-to-state4');
+                            addClass(component, 'state4');
+                            addClass(component, 'state7-to-state4');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate7tostate4EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate7tostate4EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .apptab');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd7Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .apptab');
+            }
+            function clickdesktopbbF1UvdXZCd8Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state6')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate6tostate2EndedHandler);
+                            removeAllClassesButFirst(component, 'state6-to-state2');
+                            addClass(component, 'state2');
+                            addClass(component, 'state6-to-state2');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate6tostate2EndedHandler(event) {
+                if (event.target.className.trim() == 'apptab' || event.target.className.startsWith('apptab ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate6tostate2EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .apptab');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd8Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .apptab');
+            }
+            function mouseleavedesktopbbF1UvdXZCd9Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state4')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate4tostate5EndedHandler);
+                            removeAllClassesButFirst(component, 'state4-to-state5');
+                            addClass(component, 'state5');
+                            addClass(component, 'state4-to-state5');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate4tostate5EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate4tostate5EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindowlarge');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('mouseleave', mouseleavedesktopbbF1UvdXZCd9Handler);
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindowlarge');
+            }
+            function mouseenterdesktopbbF1UvdXZCd10Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state5')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate5tostate4EndedHandler);
+                            removeAllClassesButFirst(component, 'state5-to-state4');
+                            addClass(component, 'state4');
+                            addClass(component, 'state5-to-state4');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate5tostate4EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate5tostate4EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindowlarge');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('mouseenter', mouseenterdesktopbbF1UvdXZCd10Handler);
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindowlarge');
+            }
+            function clickdesktopbbF1UvdXZCd11Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state2')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate2tostate1EndedHandler);
+                            removeAllClassesButFirst(component, 'state2-to-state1');
+                            addClass(component, 'state1');
+                            addClass(component, 'state2-to-state1');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate2tostate1EndedHandler(event) {
+                if (event.target.className.trim() == 'appwindow' || event.target.className.startsWith('appwindow ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate2tostate1EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindow .menubar2 .buttons1 .button31');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd11Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindow .menubar2 .buttons1 .button31');
+            }
+            function clickdesktopbbF1UvdXZCd12Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state4')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate4tostate1EndedHandler);
+                            removeAllClassesButFirst(component, 'state4-to-state1');
+                            addClass(component, 'state1');
+                            addClass(component, 'state4-to-state1');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate4tostate1EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate4tostate1EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindowlarge .menubar1 .buttons .button3');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd12Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button3');
+            }
+            function clickdesktopbbF1UvdXZCd13Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state4')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate4tostate2EndedHandler);
+                            removeAllClassesButFirst(component, 'state4-to-state2');
+                            addClass(component, 'state2');
+                            addClass(component, 'state4-to-state2');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate4tostate2EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate4tostate2EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindowlarge .menubar1 .buttons .button2');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd13Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button2');
+            }
+            function clickdesktopbbF1UvdXZCd14Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state3')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate3tostate6EndedHandler);
+                            removeAllClassesButFirst(component, 'state3-to-state6');
+                            addClass(component, 'state6');
+                            addClass(component, 'state3-to-state6');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate3tostate6EndedHandler(event) {
+                if (event.target.className.trim() == 'apptab' || event.target.className.startsWith('apptab ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate3tostate6EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindow .menubar2 .buttons1 .button11');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd14Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindow .menubar2 .buttons1 .button11');
+            }
+            function clickdesktopbbF1UvdXZCd15Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state3')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate3tostate4EndedHandler);
+                            removeAllClassesButFirst(component, 'state3-to-state4');
+                            addClass(component, 'state4');
+                            addClass(component, 'state3-to-state4');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate3tostate4EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate3tostate4EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindow .menubar2 .buttons1 .button21');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd15Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindow .menubar2 .buttons1 .button21');
+            }
+            function clickdesktopbbF1UvdXZCd16Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state3')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate3tostate1EndedHandler);
+                            removeAllClassesButFirst(component, 'state3-to-state1');
+                            addClass(component, 'state1');
+                            addClass(component, 'state3-to-state1');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate3tostate1EndedHandler(event) {
+                if (event.target.className.trim() == 'appwindow' || event.target.className.startsWith('appwindow ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate3tostate1EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindow .menubar2 .buttons1 .button31');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd16Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindow .menubar2 .buttons1 .button31');
+            }
+            function clickdesktopbbF1UvdXZCd17Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state5')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate5tostate7EndedHandler);
+                            removeAllClassesButFirst(component, 'state5-to-state7');
+                            addClass(component, 'state7');
+                            addClass(component, 'state5-to-state7');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate5tostate7EndedHandler(event) {
+                if (event.target.className.trim() == 'apptab' || event.target.className.startsWith('apptab ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate5tostate7EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindowlarge .menubar1 .buttons .button1');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd17Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button1');
+            }
+            function clickdesktopbbF1UvdXZCd18Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state5')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate5tostate2EndedHandler);
+                            removeAllClassesButFirst(component, 'state5-to-state2');
+                            addClass(component, 'state2');
+                            addClass(component, 'state5-to-state2');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate5tostate2EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate5tostate2EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindowlarge .menubar1 .buttons .button2');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd18Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button2');
+            }
+            function clickdesktopbbF1UvdXZCd19Handler(event) {
+                var component = document.querySelector('.desktop-bbF1');
+                if (isCurrentState(component, 'state5')) {
+                    try {
+                        setTimeout(function() {
+                            var component = document.querySelector('.desktop-bbF1');
+                            component.addEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate5tostate1EndedHandler);
+                            removeAllClassesButFirst(component, 'state5-to-state1');
+                            addClass(component, 'state1');
+                            addClass(component, 'state5-to-state1');
+                        }, 0);
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            function transitiondesktopbbF1UvdXZCdstate5tostate1EndedHandler(event) {
+                if (event.target.className.trim() == 'desktopicons' || event.target.className.startsWith('desktopicons ')) {
+                    var component = document.querySelector('.desktop-bbF1');
+                    component.removeEventListener(transitionEvent, transitiondesktopbbF1UvdXZCdstate5tostate1EndedHandler);
+                }
+            }
+            child = document.querySelector('.desktop-bbF1 .appwindowlarge .menubar1 .buttons .button3');
+            if (child) {
+                child.style['pointer-events'] = 'auto';
+                child.addEventListener('click', clickdesktopbbF1UvdXZCd19Handler);
+                child.style['cursor'] = 'pointer';
+            } else {
+                console.log('Could not find element at: .desktop-bbF1 .appwindowlarge .menubar1 .buttons .button3');
+            }
+        </script>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("anima-src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("anima-src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+    </body>
+</html>
