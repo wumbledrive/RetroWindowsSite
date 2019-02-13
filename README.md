@@ -50,4 +50,8 @@ Window resizing "pins" added.
 
 [2/11/19]
 Dropdown toolbar added.  
-![Dropdown](https://github.com/wumbledrive/RetroWindowsSite/blob/dev/Images/Dropdown.gif?raw=true) 
+![Dropdown](https://github.com/wumbledrive/RetroWindowsSite/blob/dev/Images/Dropdown.gif?raw=true)  
+
+[2/11/19]  
+"Stuff" menu added with individual tabs.  
+![StartMenu](https://github.com/wumbledrive/RetroWindowsSite/blob/dev/Images/Stuff%20Menu.gif?raw=true) 
